@@ -1,5 +1,5 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=New+Rocker&display=swap');
 /* Links */
 a,
 a:focus,
@@ -25,8 +25,11 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-image: url(/app/static/images/bg.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
 }
+
 
 body {
   display: -ms-flexbox;
@@ -49,10 +52,13 @@ body {
 }
 
 .masthead-brand {
+  font-family: 'New Rocker', cursive;
   margin-bottom: 0;
+
 }
 
 .nav-masthead .nav-link {
+  font-family: 'Grenze Gotisch', cursive;
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
