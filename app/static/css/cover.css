@@ -11,9 +11,9 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: rgb(162, 67, 218);
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: rgba(103, 46, 209, 0.76);
   border: .05rem solid #fff;
 }
 
@@ -25,6 +25,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  background-color: lightslategray;
   background-image: url(/app/static/images/bg.jpg);
   background-position: cover;
   background-repeat: no-repeat;
@@ -61,7 +62,7 @@ body {
   font-family: 'Grenze Gotisch', cursive;
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(141, 44, 206, 0.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
