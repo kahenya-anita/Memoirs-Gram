@@ -4,35 +4,22 @@ from PIL import
 from flask import Flask, render_template, url_for, flash, redirect, request
 from app import app, db, bcrypt
 from app.models import User, Post
-from app.forms import RegistrationForm, LoginForm, UpdateAccountForm
+from app.forms import RegistrationForm, LoginForm, UpdateAccountForm, POstForm
 from flask_login import login_user, current_user, log_out, login_required
 
 
-posts = [
-    {
-        'author': 'Wilson Peter',
-        'title': 'Quote',
-        'content': 'Dont just have a love life.LOve life',
-        'date_posted': 'SEptember 20, 2020'
-    },
-    {
-        'author': 'Jane Janett',
-        'title': 'Inspire',
-        'content': 'Practice makes perfect',
-        'date_posted': 'September 21, 2020'
-    }
-]
-
-
-
-@app.route('/home')
-def home():
-    title = 'Memoirs Gram'
+@app.route("/")
+@app.route("/home")
+def home()
+posts = Post.query.all():
     return  render_template('home.html', title = title)
+
 
 @app.route('/about')
 def about():
     return  render_template('about.html', posts = posts)
+
+
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -103,10 +90,17 @@ def account():
         form.username.data = current_user.username
         form.email.data = current_user.email
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
-    return render_template('account.html', title='Account', image_file='image_file', form='form')
+    return render_template('account.html', title='Account', image_file=image_file, form=form)
 
 
-@app.route("/post/new")
+@app.route("/post/new", methods=['GET', 'POST'])
 @login_required
 def new_post():
-    return render_template('create_post.html', title='New Post')
+    form = PostForm()
+    if form.validate_on submit():
+        post = POst(title=form.title.data, connect=form.content.data, author=current_user )
+        db.session.add(post)
+        db.session.commit()
+        flash('Your post has been created!', 'success')
+        return redirect(url_for('about'))
+    return render_template('create_post.html', title='New Post', form=form)
