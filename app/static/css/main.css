@@ -9,13 +9,19 @@
   }
   
   .content-section {
-    background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
   }
-  
+  .content-section2 {
+    background-color: crimson;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
   .article-title {
     color: #0f0f0f;
   }

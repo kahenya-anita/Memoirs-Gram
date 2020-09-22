@@ -1,0 +1,3 @@
+export SECRET_KEY='fbdc1dba0db1af419fc195f780d34c27d1ffe0efb6edbb585e22f8d027ecadce'
+
+python3.6 manage.py server

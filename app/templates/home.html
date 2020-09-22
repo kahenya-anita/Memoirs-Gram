@@ -1,16 +1,17 @@
 
 {% extends 'layout.html' %}
 {% block content  %}
-<link  rel="stylesheet" href="{{ url_for('static', filename='css/cover.css') }}" >
-
-<div class="text-centre home" >
+<link  rel="stylesheet" href="{{ url_for('static', filename='css/cover.css') }}" ><div class="cover">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="text-centre home" >
     <main role="main" class="inner cover" >
         <h1 class="cover-heading">Unleash Your Inner Thoughts.</h1>
-        <p class="lead">The VIRUS has done what no woman had been able to do...canclel all sports,shutdown all bars, and keep man at home!!!<main role="main" class="inner cover"> 
+        <p class="lead">Post a pitch on any topic of your interest.You can also view other piches by different authors.Welcom to Memoirs Gram!!!<main role="main" class="inner cover"> 
         <p class="lead">
           <a href="{{url_for('users.register')}}" class="btn btn-lg btn-secondary">Get started</a>
         </p>
     </main>
+  </div>
 </div>
  
 {% endblock  %}
