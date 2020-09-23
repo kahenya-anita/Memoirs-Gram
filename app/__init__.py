@@ -14,14 +14,14 @@ login_manager.login_message_category = 'info'
 mail = Mail()
 
 
-def create_app(config_class=Config):
+def create_app(config_name):
     app = Flask(__name__)
-    #app.config.from_object(Config_options[config_name])
-
-    #csrf = CSRFProtect(app)
+    
+    db.init_app(app)
+    app.config.from_object(config_options[config_name]) 
     app.config['SECRET_KEY'] = 'fbdc1dba0db1af419fc195f780d34c27d1ffe0efb6edbb585e22f8d027ecadce'
 
-    db.init_app(app)
+    
     bcrypt.init_app(app)
     login_manager.init_app(app)
     mail.init_app(app)
@@ -30,6 +30,7 @@ def create_app(config_class=Config):
     from app.posts.routes import posts
     from app.main.routes import main
     from app.errors.handlers import errors
+    from app.models import User, Post  
     app.register_blueprint(users)
     app.register_blueprint(posts)
     app.register_blueprint(main)

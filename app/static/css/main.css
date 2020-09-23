@@ -9,13 +9,7 @@
   }
   
   .content-section {
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
-  }
-  .content-section2 {
-    background-color: crimson;
+    background-color: linear-gradient(45deg, rgb(76,0,255),transparent);
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;

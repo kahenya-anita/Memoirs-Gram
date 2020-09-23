@@ -1,7 +1,6 @@
 ## Memoirs Gram
 
-![Screenshot from 2020-09-18 08-22-38](https://user-images.githubusercontent.com/62019551/93562881-88dc4d00-f98f-11ea-8221-82c80af9af9c.png)
-
+![Screenshot from 2020-09-23 16-52-08](https://user-images.githubusercontent.com/62019551/94021954-4070c500-fdbd-11ea-987b-7b189ad8f3e4.png)
 
 ## By Anita Kahenya
 ###  23rd september 2020

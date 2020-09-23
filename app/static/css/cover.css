@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap');
 /* Links */
 a,
 a:focus,
@@ -11,7 +11,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: rgb(162, 67, 218);
+  color: rgb(235, 21, 206);
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: rgba(103, 46, 209, 0.76);
   border: .05rem solid #fff;
@@ -25,17 +25,21 @@ a:hover {
 html,
 body{
   height: 100%;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
   
 }
 
 body{
+  font-family: 'Grenze Gotisch', cursive;
+  font-stretch: wider;
+  font: outline;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
+  color: rgb(24, 23, 24);
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
@@ -106,6 +110,8 @@ body{
 }
 .cover-heading{
   text-anchor: middle;
+  color: antiquewhite;
+  
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
