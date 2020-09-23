@@ -5,6 +5,7 @@ import os
 class Config:
     SECRET_KEY =  os.urandom(32)
     SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://toshiba:2543t@localhost/site'
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
