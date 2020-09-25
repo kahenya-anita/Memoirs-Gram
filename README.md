@@ -6,7 +6,7 @@
 ###  23rd september 2020
 
 #### Link to live page
-  [https://git.heroku.com/memoirs-gram.git]
+  [https://memoirs-gram.herokuapp.com/]
 
   
 ## Description
