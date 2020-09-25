@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="outer">
 <div class="content-section">
     <form method="POST" action="">
         {{ form.hidden_tag() }}
-        <fieldset class="form-group">
+        <fieldset class="form-group align-content-center ">
             <legend class="border-bottom mb-4">{{ legend }}</legend>
             <div class="form-group">
                 {{ form.title.label(class="form-control-label") }}
@@ -36,5 +37,6 @@
             {{ form.submit(class="btn btn-outline-info") }}
         </div>
     </form>
+</div>
 </div>
 {% endblock content %}
