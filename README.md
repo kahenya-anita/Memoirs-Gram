@@ -5,6 +5,10 @@
 ## By Anita Kahenya
 ###  23rd september 2020
 
+#### Link to live page
+  [https://git.heroku.com/memoirs-gram.git]
+
+  
 ## Description
 * An application that allows users to use that one minute wisely. The users can submit their one minute pitches and other users will be able to view them. 
 * The pitches are organized by topics.
